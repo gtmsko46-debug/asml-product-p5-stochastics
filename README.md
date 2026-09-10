@@ -1,5 +1,7 @@
 # asml-product-p5-stochastics
 
+> **Champion FREEZE (2026-09-10):** no new hills / no new tickets. This README is the ship surface — polish docs only. See asml-bench `corpus/notes/champion-freeze-2026-09-10-product-ship.md`.
+
 Stochastic defect vs dose / FEL pulse structure. Card: `stochastics-resist-v1`.
 
 ```python
