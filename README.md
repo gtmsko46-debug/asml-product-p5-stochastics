@@ -1,16 +1,10 @@
 # asml-product-p5-stochastics
 
-**Stochastic defect vs dose / FEL pulse structure — do more watts help or is arrival statistics the lever?**
+Stochastic defect vs dose / FEL pulse structure. Card: `stochastics-resist-v1`.
 
-| | |
-|--|--|
-| Spec | [`SPEC.md`](SPEC.md) · asml-bench [#48](https://github.com/gtmsko46-debug/asml-bench/issues/48) |
-| Factory | [FACTORY.md](https://github.com/gtmsko46-debug/asml-bench/blob/main/products/FACTORY.md) |
-| Stage | **Spec (M0)** — package/build waits bay |
-
-```bash
-# after M1
-pip install -e '.[dev]'
+```python
+from asml_product_p5_stochastics import stochastic_risk
+print(stochastic_risk({"dose_mj_cm2": 40, "pulse_rate_mhz": 100}))
 ```
 
-Sandbox hill-climbs live on asml-bench (`labs/p5-stochastics/solver.py`); set `ASML_BENCH_ROOT` to pick up live weights once the loader exists.
+M1 SEED. Parent #48.
